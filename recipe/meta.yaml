@@ -1,6 +1,6 @@
 {% set name = "fenicsx-beat" %}
 {% set python_min = "3.10" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fenicsx_beat-{{ version }}.tar.gz
-  sha256: 7bb5f03ebd658b3379b6633361c5f505bf718625f2bbaf2ba22cc6f9ba8e4afc
+  sha256: 3ed5085ef26c696b967824c550112ce4d930ff2e5cd4e3f02e7816aea3686ddc
 
 build:
   number: 0
