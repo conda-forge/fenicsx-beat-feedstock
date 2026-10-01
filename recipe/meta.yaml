@@ -1,6 +1,6 @@
 {% set name = "fenicsx-beat" %}
 {% set python_min = "3.12" %}
-{% set version = "0.6.4" %}
+{% set version = "0.7.0" %}
 
 package:
   name: "{{ name|lower }}"
