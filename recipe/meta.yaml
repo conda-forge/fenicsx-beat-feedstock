@@ -29,6 +29,7 @@ requirements:
     - scifem >=0.3.1
     - pint
     - rich
+    - toml
     - fenics-dolfinx
 
 test:
