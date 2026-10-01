@@ -31,6 +31,10 @@ requirements:
     - rich
     - toml
     - pydantic
+    - pydantic-pint
+    - io4dolfinx
+    - cardiac-geometriesx
+    - gotranx
     - fenics-dolfinx
 
 test:
