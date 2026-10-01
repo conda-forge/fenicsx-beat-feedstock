@@ -30,6 +30,7 @@ requirements:
     - pint
     - rich
     - toml
+    - pydantic
     - fenics-dolfinx
 
 test:
