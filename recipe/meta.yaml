@@ -55,7 +55,7 @@ test:
   commands:
     - pip check
     - beat --help
-    - pytest --log-cli-level=debug -vvs --maxfail 4 -m "not postprocess" tests
+    - pytest --log-cli-level=debug -vvs --maxfail 4 -m "not postprocess" -m "not require_docs" tests
 
 
 about:
