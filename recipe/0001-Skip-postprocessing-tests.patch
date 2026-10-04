@@ -1,7 +1,7 @@
 From 2224f46afe59dc98fafd75e18c6346896ba25c08 Mon Sep 17 00:00:00 2001
 From: Henrik Finsberg <henrikfinsberg@hotmail.com>
 Date: Sun, 4 Oct 2026 09:40:37 +0000
-Subject: [PATCH] Skip postprocessing tests
+Subject: [PATCH 1/2] Skip postprocessing tests
 
 ---
  pyproject.toml                | 1 +
