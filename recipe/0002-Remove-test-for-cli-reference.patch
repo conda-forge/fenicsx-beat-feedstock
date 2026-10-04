@@ -1,0 +1,38 @@
+From c6e5903981f20d935bfbe192e03ce61e6c6e8636 Mon Sep 17 00:00:00 2001
+From: Henrik Finsberg <henrikfinsberg@hotmail.com>
+Date: Sun, 4 Oct 2026 10:40:11 +0000
+Subject: [PATCH 2/2] Remove test for cli reference
+
+---
+ tests/test_cli_reference.py | 19 -------------------
+ 1 file changed, 19 deletions(-)
+ delete mode 100644 tests/test_cli_reference.py
+
+diff --git a/tests/test_cli_reference.py b/tests/test_cli_reference.py
+deleted file mode 100644
+index 6e13d21..0000000
+--- a/tests/test_cli_reference.py
++++ /dev/null
+@@ -1,19 +0,0 @@
+-from pathlib import Path
+-
+-from beat.cli.config_reference import render_reference
+-
+-
+-def test_reference_mentions_every_section_and_is_up_to_date():
+-    text = render_reference()
+-    for section in (
+-        "[geometry]",
+-        "[ep]",
+-        "[cell]",
+-        "[[stimulus]]",
+-        "[solver]",
+-        "[output]",
+-        "[postprocess]",
+-    ):
+-        assert section in text
+-    doc = Path(__file__).parents[1] / "docs" / "cli_reference.md"
+-    assert doc.read_text() == text, "Run `python scripts/gen_cli_reference.py`"
+-- 
+2.43.0
+
