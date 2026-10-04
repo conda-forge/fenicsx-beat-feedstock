@@ -1,0 +1,41 @@
+From e73211982f5585e1abcd0ddbdbd00938b8681d9b Mon Sep 17 00:00:00 2001
+From: Henrik Finsberg <henrikfinsberg@hotmail.com>
+Date: Sun, 4 Oct 2026 11:02:42 +0000
+Subject: [PATCH 2/2] Add markerer to skip tests requiring docs
+
+---
+ pyproject.toml              | 1 +
+ tests/test_cli_reference.py | 3 +++
+ 2 files changed, 4 insertions(+)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 361f0e2..e9d0df6 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -133,6 +133,7 @@ testpaths = [
+ markers = [
+     "skip_in_parallel: test cannot be run under multi-rank MPI",
+     "postprocess: test is a post-processing script that is not run by default",
++    "require_docs: test requires documentation to be accesible",
+ ]
+ 
+ [[tool.mypy.overrides]]
+diff --git a/tests/test_cli_reference.py b/tests/test_cli_reference.py
+index 6e13d21..cdbef7c 100644
+--- a/tests/test_cli_reference.py
++++ b/tests/test_cli_reference.py
+@@ -1,8 +1,11 @@
+ from pathlib import Path
+ 
++import pytest
++
+ from beat.cli.config_reference import render_reference
+ 
+ 
++@pytest.mark.require_docs
+ def test_reference_mentions_every_section_and_is_up_to_date():
+     text = render_reference()
+     for section in (
+-- 
+2.43.0
+

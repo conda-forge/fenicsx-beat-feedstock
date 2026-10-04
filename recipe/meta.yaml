@@ -11,7 +11,7 @@ source:
   sha256: 95f8a8743a569ab2854c5b0d72d38f464ef9a4a5be3f7cc6baa06eac4e1e2c6a
   patches: 
     - 0001-Skip-postprocessing-tests.patch
-    - 0002-Remove-test-for-cli-reference.patch
+    - 0002-Add-markerer-to-skip-tests-requiring-docs.patch
 
 build:
   number: 0
