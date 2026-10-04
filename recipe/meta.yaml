@@ -37,7 +37,7 @@ requirements:
     - cardiac-geometriesx
     - gotranx
     - fenics-dolfinx
-  
+    - numba
 
 test:
   requires:
