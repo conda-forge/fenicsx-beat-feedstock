@@ -1,6 +1,6 @@
 {% set name = "fenicsx-beat" %}
 {% set python_min = "3.12" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -8,10 +8,8 @@ package:
 
 source:
   url: https://github.com/finsberg/fenicsx-beat/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 95f8a8743a569ab2854c5b0d72d38f464ef9a4a5be3f7cc6baa06eac4e1e2c6a
-  patches: 
-    - 0001-Skip-postprocessing-tests.patch
-    - 0002-Remove-test-for-cli-reference.patch
+  sha256: d57e854f6ad85f2315ddd7069635bd2961b0aa9175c4c372e29449bd76b0ca87
+
 
 build:
   number: 0
