@@ -9,9 +9,7 @@ package:
 source:
   url: https://github.com/finsberg/fenicsx-beat/archive/refs/tags/v{{ version }}.tar.gz
   sha256: d57e854f6ad85f2315ddd7069635bd2961b0aa9175c4c372e29449bd76b0ca87
-  patches:
-    - 0001-Skip-postprocessing-tests.patch
-    - 0002-Remove-test-for-cli-reference.patch
+
 
 build:
   number: 0
