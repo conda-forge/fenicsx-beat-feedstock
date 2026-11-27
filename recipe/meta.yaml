@@ -1,6 +1,6 @@
 {% set name = "fenicsx-beat" %}
 {% set python_min = "3.12" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/finsberg/fenicsx-beat/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 21de5daf2720394a82897d23745d49904e3b1a2b90d17795fd969d860ccf6133
+  sha256: 058bc21e8159bf76b57f8ff56bbe2b1d2c9cfed9ea50a06f8f596960b42d446b
 
 
 build:
